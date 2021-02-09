@@ -35,13 +35,14 @@ typedef struct	s_tab
 	int				i;
 }				t_tab;
 
-int				ft_printf(const char *str, ...);
+int				ft_printf(const char *format, ...);
 void			init_struct(t_tab *tab);
 void			ft_str_it(va_list ap, t_tab *tab, char *str);
 void			ft_parse(char *str, va_list ap, t_tab *tab);
 void			ft_check_flag(char *str, va_list ap, t_tab *tab);
 void			ft_add_to_buff(t_tab *tab, char *str, int len);
-void			ft_dump_buffer(t_tab *tab);
+void			ft_dump_buff(t_tab *tab);
+void			ft_print(t_tab *tab, char *str);
 void			ft_convert_str(va_list ap, t_tab *tab);
 void			ft_convert_int(va_list ap, t_tab *tab);
 void			ft_convert_uint(va_list ap, t_tab *tab);
