@@ -2,7 +2,7 @@ NAME=			libftprintf.a
 
 SRCS=			ft_printf.c ft_parse.c ft_convert.c ft_convert_int.c \
 				ft_printf_utils.c ft_printf_utils2.c ft_printf_utils3.c \
-				ft_printf_utils4.c
+				ft_printf_utils4.c ft_printf_utils5.c
 
 OBJS=			$(SRCS:.c=.o)
 

@@ -70,7 +70,7 @@ void		ft_conv_x(va_list ap, t_tab *tab)
 	if (tab->u == 0 && tab->precision && tab->precision_width == 0)
 	{
 		free(str);
-		str = ft_strdup(' ');
+		str = ft_strdup(" ");
 	}
 	(tab->sharp && tab->u) ? (tab->len += 2) : 0;
 	sp = ft_print_sp(tab);
