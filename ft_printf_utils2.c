@@ -14,7 +14,7 @@ char	*itoa_printf(intmax_t n)
 		if (n < 0)
 		{
 			str[--num_len] = -(n % 10) + 48;
-			n /= 10;
+			n = n / 10;
 			n = -n;
 		}
 		else

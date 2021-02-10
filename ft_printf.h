@@ -80,7 +80,7 @@ size_t			ft_is_flag(char c);
 size_t			ft_is_from_pf(char c);
 size_t			ft_strlen(const char *str);
 void			*ft_memset(void *str, int c, size_t n);
-void			ft_bzero(void *s, size_t n);
+void			*ft_memalloc(size_t size);
 void			*ft_calloc(size_t nitems, size_t size);
 
 #endif

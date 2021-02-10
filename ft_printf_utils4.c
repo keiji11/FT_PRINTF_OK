@@ -30,28 +30,30 @@ size_t		ft_uintlen(uintmax_t n)
 
 void		*ft_memset(void *str, int c, size_t n)
 {
-	size_t i;
+	size_t	i;
+	char	*s;
 
+	s = str;
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)str)[i] = c;
+		s[i] = c;
 		i++;
 	}
 	return (str);
 }
 
-void		ft_bzero(void *s, size_t n)
+void		*ft_memalloc(size_t size)
 {
-	ft_memset(s, 0, n);
+	void	*mem;
+
+	if (!(mem = malloc(size)))
+		return (NULL);
+	ft_memset(mem, 0, size);
+	return (mem);
 }
 
 void		*ft_calloc(size_t nitems, size_t size)
 {
-	void	*ret;
-
-	if (!(ret = malloc(nitems * size)))
-		return (NULL);
-	ft_bzero(ret, nitems * size);
-	return (ret);
+	return (ft_memalloc(nitems * size));
 }

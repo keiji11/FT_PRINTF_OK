@@ -100,7 +100,7 @@ char	*ft_num_precision(char *str, t_tab *tab)
 		return (str);
 	if (!(tmp = ft_calloc(tab->precision_width + tab->len + 1, sizeof(char))))
 		return (NULL);
-	while (i < tab->precision_width - tab->len)
+	while (i < (tab->precision_width - tab->len))
 	{
 		tmp[i] = '0';
 		i++;
