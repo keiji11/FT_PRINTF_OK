@@ -14,7 +14,7 @@ char	*itoa_printf(intmax_t n)
 		if (n < 0)
 		{
 			str[--num_len] = -(n % 10) + 48;
-			n = n / 10;
+			n /= 10;
 			n = -n;
 		}
 		else
@@ -33,7 +33,7 @@ int		ft_atoi_printf(char *str, int *i)
 	atoi = 0;
 	while (str[*i] >= '0' && str[*i] <= '9')
 	{
-		atoi = atoi * 10 + str[*i] - 48;
+		atoi = (atoi * 10) + str[*i] - 48;
 		(*i)++;
 	}
 	(*i)--;
