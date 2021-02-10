@@ -86,13 +86,13 @@ void		ft_parse(char *str, va_list ap, t_tab *tab)
 		tab->precision = 0;
 	(tab->precision && tab->precision_width >= 0) ? tab->zero = 0 : 0;
 	tab->conv = str[tab->i];
-	(str[tab->i] == 'c') ? ft_convert_c(ap, tab) : 0;
-	(str[tab->i] == 's') ? ft_convert_str(ap, tab) : 0;
-	(str[tab->i] == 'p') ? ft_convert_p(ap, tab) : 0;
-	(str[tab->i] == 'd' || str[tab->i] == 'i') ? ft_convert_int(ap, tab) : 0;
-	(str[tab->i] == 'u') ? ft_convert_uint(ap, tab) : 0;
-	(str[tab->i] == 'x') ? ft_convert_x(ap, tab) : 0;
-	(str[tab->i] == 'X') ? ft_convert_x(ap, tab) : 0;
-	(str[tab->i] == '%') ? ft_convert_c(ap, tab) : 0;
-	(str[tab->i] == 'n') ? ft_convert_n(ap, tab) : 0;
+	(str[tab->i] == 'c') ? ft_conv_c(ap, tab) : 0;
+	(str[tab->i] == 's') ? ft_conv_str(ap, tab) : 0;
+	(str[tab->i] == 'p') ? ft_conv_p(ap, tab) : 0;
+	(str[tab->i] == 'd' || str[tab->i] == 'i') ? ft_conv_int(ap, tab) : 0;
+	(str[tab->i] == 'u') ? ft_conv_uint(ap, tab) : 0;
+	(str[tab->i] == 'x') ? ft_conv_x(ap, tab) : 0;
+	(str[tab->i] == 'X') ? ft_conv_x(ap, tab) : 0;
+	(str[tab->i] == '%') ? ft_conv_c(ap, tab) : 0;
+	(str[tab->i] == 'n') ? ft_conv_n(ap, tab) : 0;
 }
