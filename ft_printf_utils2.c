@@ -33,12 +33,7 @@ int		ft_atoi_printf(char *str, int *i)
 	atoi = 0;
 	while (str[*i] >= '0' && str[*i] <= '9')
 	{
-<<<<<<< HEAD
-		atoi = atoi + str[*i] - 48;
-		atoi = atoi * 10; 
-=======
 		atoi = atoi * 10 + str[*i] - 48;
->>>>>>> 7e0ff06a0082bfcd155544f97270b7447cac9fc1
 		(*i)++;
 	}
 	(*i)--;
