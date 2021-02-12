@@ -12,7 +12,11 @@ void		ft_check_flag(char *str, va_list ap, t_tab *tab)
 	if (str[tab->i] == '0' && !tab->minus && !tab->precision_parsing)
 		tab->zero = 1;
 	if (str[tab->i] > '0' && str[tab->i] < '9' && !tab->precision_parsing)
+<<<<<<< HEAD
 		tab->width = ft_atoi_printf(str, &tab->i);;
+=======
+		tab->width = ft_atoi_printf(str, &tab->i);
+>>>>>>> 7e0ff06a0082bfcd155544f97270b7447cac9fc1
 	if (str[tab->i] >= '0' && str[tab->i] <= '9' && tab->precision_parsing)
 		tab->precision_width = ft_atoi_printf(str, &tab->i);
 	tab->precision_parsing = 0;
