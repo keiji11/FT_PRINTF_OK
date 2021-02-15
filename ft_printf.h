@@ -6,6 +6,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <stdio.h>
+# include <stdint.h>
 
 # ifndef BUFFER_SIZE
 # define BUFFER_SIZE 64
