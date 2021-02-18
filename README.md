@@ -2,4 +2,4 @@
 
 ft_printf-v2
 
-# llucente's 42 printf Score - [![llucente's 42Project Score](https://badge42.herokuapp.com/api/project/llucente/ft_printf)](https://github.com/JaeSeoKim/badge42)
+## llucente's 42 printf Score - [![llucente's 42Project Score](https://badge42.herokuapp.com/api/project/llucente/ft_printf)(https://github.com/JaeSeoKim/badge42)
